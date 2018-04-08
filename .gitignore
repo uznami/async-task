@@ -1,0 +1,6 @@
+**/node_modules
+**/__pycache__
+**/.cache
+app-server/.cache
+app-server/.forever
+app-server/.yarn

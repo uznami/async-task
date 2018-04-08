@@ -1,0 +1,10 @@
+server {
+    listen 80;
+    location / {
+        root /usr/share/nginx/html;
+    }
+    location /api/ {
+        client_max_body_size 4G;
+        proxy_pass http://${APPSERVER_HOST}:${APPSERVER_PORT}/;
+    }
+}
